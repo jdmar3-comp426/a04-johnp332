@@ -11,6 +11,7 @@ app.use(express.json());
 
 // Set server port
 var HTTP_PORT = 5000;
+
 // Start server
 app.listen(HTTP_PORT, () => {
     console.log("Server running on port %PORT%".replace("%PORT%",HTTP_PORT))
