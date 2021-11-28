@@ -15,7 +15,6 @@ var HTTP_PORT = 5000;
 app.listen(HTTP_PORT, () => {
     //console.log("Server running on port %PORT%".replace("%PORT%",HTTP_PORT))
 });
-
 // READ (HTTP method GET) at root endpoint /app/
 app.get("/app/", (req, res, next) => {
     res.json({"message":"Your API works! (200)"});
@@ -59,6 +58,6 @@ app.delete("/app/update/user:id", (req, res) => {
 
 // Default response for any other request
 app.use(function(req, res){
-    res.json({"message":"Endpoint not found. (404)"});
+    res.json({"message":"Your API is working!"});
     res.status(404);
 });
